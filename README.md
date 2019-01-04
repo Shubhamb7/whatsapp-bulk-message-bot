@@ -20,8 +20,7 @@
 **tqdm :**    makes your loops show a smart progress meter - just wrap any iterable with tqdm() 
              `sudo pip install tqdm`   
              
-**Pyqrcode :**    The pyqrcode module is a QR code generator that is simple to use and written in pure python.
-                 `sudo pip install pyqrcode`
+**Pyqrcode :**    The pyqrcode module is a QR code generator that is simple to use and written in pure python.                                                                              `sudo pip install pyqrcode`
                  
 ##### Download Latest Mozilla Gecko Driver [ https://www.seleniumhq.org/download/ ]
       also change the executable path from the code and set it to the directory you have downloaded the geckodriver
