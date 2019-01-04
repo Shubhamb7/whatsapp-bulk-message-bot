@@ -4,10 +4,10 @@
 > Python & Selenium
 
 **Prerequisites :**
-    These installations are for linux users. Windows/Mac users search how to install the same on Windows/Mac.
+    ```These installations are for linux users. Windows/Mac users search how to install the same on Windows/Mac.```
     
     
-**python 3 :**   usually preinstalled in linux distros 
+**python 3 :**   ```usually preinstalled in linux distros ```
                  `sudo apt-get install python3`
 
 
