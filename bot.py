@@ -61,7 +61,6 @@ except ValueError:
     print('Invalid Input ! ')
 
 #extract the numbers from the list
-#send the numbers to the dom by creating a anchor tag and using api send the message
 
 for i in tqdm(range(0,num)):
     elm = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/div[1]')
