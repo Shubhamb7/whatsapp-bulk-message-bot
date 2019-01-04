@@ -18,19 +18,19 @@
 **Selenium :**   
 ```
    Selenium is a portable automation software-testing framework for web applications.
-   sudo pip install selenium
+   installation : sudo pip install selenium
 ```
 
 **tqdm :**    
 ``` 
     makes your loops show a smart progress meter - just wrap any iterable with tqdm()
-    sudo pip install tqdm
+    installation : sudo pip install tqdm
 ```          
              
 **Pyqrcode :**    
 ``` 
     The pyqrcode module is a QR code generator that is simple to use and written in pure python.
-    sudo pip install pyqrcode
+    installation : sudo pip install pyqrcode
 ```
 ##### Download the Latest Mozilla Gecko Driver from [ https://www.seleniumhq.org/download/ ]
         also change the executable path from the code and set it to the directory you have downloaded the geckodriver
