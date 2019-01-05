@@ -4,18 +4,16 @@ import re
 import selenium
 from tqdm import tqdm
 import pyqrcode
+
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
-
 options = Options()
 options.set_headless(True)
 driver = webdriver.Firefox(options=options, executable_path=r'/home/shubham/Downloads/geckodriver')
-
 driver.get('http://web.whatsapp.com')
 driver.set_window_size(1400,900)
 time.sleep(1)
-
 token = driver.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[1]/div[2]/div').get_attribute('data-ref')
 img = pyqrcode.create(token)
 img.png('QRcode.png',scale=5)
@@ -46,8 +44,7 @@ try:
                     print('pattern dosent match !')
             except ValueError:
                 print('Invalid Input ! ')
-                continue
-        
+                continue       
 except ValueError:
     print('Invalid Input ! ')
 
@@ -61,14 +58,12 @@ for i in tqdm(range(0,num)):
     focus.send_keys(msg)
     focus.send_keys(Keys.ENTER)
 print('done')
-
 time.sleep(1)
 dot = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/header/div[2]/div/span/div[3]/div')
 dot.click()
 time.sleep(1)
 logout = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/header/div[2]/div/span/div[3]/span/div/ul/li[6]/div')
 logout.click()
-
 if os.path.exists('QRcode.png'):
     os.remove('QRcode.png')
 driver.quit()
