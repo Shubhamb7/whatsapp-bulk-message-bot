@@ -8,26 +8,17 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
 
-#initialize the headless browser, Firefox is the recommended headless browser 
-
 options = Options()
 options.set_headless(True)
 driver = webdriver.Firefox(options=options, executable_path=r'/home/shubham/Downloads/geckodriver')
-
-#open the site and set window size
 
 driver.get('http://web.whatsapp.com')
 driver.set_window_size(1400,900)
 time.sleep(1)
 
-#extract QRcode from whatsapp web and regenerate it by importing pyqrcode library
-
 token = driver.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[1]/div[2]/div').get_attribute('data-ref')
 img = pyqrcode.create(token)
 img.png('QRcode.png',scale=5)
-
-#input numbers and message
-#validate numbers as per indian standard
 
 try:
     num = int(input('enter number of people you want to send the text to : '))
@@ -60,8 +51,6 @@ try:
 except ValueError:
     print('Invalid Input ! ')
 
-#extract the numbers from the list
-
 for i in tqdm(range(0,num)):
     elm = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/div[1]')
     driver.execute_script("arguments['0'].innerHTML = '<a href=\"https://api.whatsapp.com/send?phone=+91"+str(no[i])+"&message="+msg+"id=\"contact"+str(i+1)+">"+str(i+1)+"</a>';", elm)
@@ -72,8 +61,6 @@ for i in tqdm(range(0,num)):
     focus.send_keys(msg)
     focus.send_keys(Keys.ENTER)
 print('done')
-
-#click logout and delete the QRcode image
 
 time.sleep(1)
 dot = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/header/div[2]/div/span/div[3]/div')
