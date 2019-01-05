@@ -17,7 +17,6 @@ time.sleep(1)
 token = driver.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[1]/div[2]/div').get_attribute('data-ref')
 img = pyqrcode.create(token)
 img.png('QRcode.png',scale=5)
-
 try:
     num = int(input('enter number of people you want to send the text to : '))
     msg = input('enter the message : ')
@@ -34,7 +33,6 @@ try:
                     x = int(input('enter '+str(i)+'rd number : '))
                 else:
                     x = int(input('enter '+str(i)+'th number : '))
-
                 pat = re.compile(r'^[789]\d{9}')
                 p = re.findall(pat,str(x))
                 if p:
@@ -47,7 +45,6 @@ try:
                 continue       
 except ValueError:
     print('Invalid Input ! ')
-
 for i in tqdm(range(0,num)):
     elm = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/div[1]')
     driver.execute_script("arguments['0'].innerHTML = '<a href=\"https://api.whatsapp.com/send?phone=+91"+str(no[i])+"&message="+msg+"id=\"contact"+str(i+1)+">"+str(i+1)+"</a>';", elm)
