@@ -1,6 +1,7 @@
 import time
 import os
 import re
+import png
 import selenium
 from tqdm import tqdm
 import pyqrcode
