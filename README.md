@@ -18,7 +18,10 @@
                 `sudo pip install selenium`
 
 **tqdm :**    makes your loops show a smart progress meter - just wrap any iterable with tqdm() 
-             `sudo pip install tqdm`   
+             `sudo pip install tqdm`
+             
+**pypng :**   PyPNG can read and write all PNG formats.
+             `sudo pip install pypng`
              
 **Pyqrcode :**    The pyqrcode module is a QR code generator that is simple to use and written in pure python.                                                                              `sudo pip install pyqrcode`
                  
