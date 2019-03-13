@@ -12,7 +12,7 @@ from selenium.webdriver.common.keys import Keys
 
 options = Options()
 options.set_headless(True)
-driver = webdriver.Firefox(options=options, executable_path=r'/home/shubham/Downloads/geckodriver')
+driver = webdriver.Firefox(options=options, executable_path=r'geckodriver.exe')
 driver.get('http://web.whatsapp.com')
 driver.set_window_size(1400,900)
 time.sleep(1)
@@ -22,7 +22,7 @@ img.png('QRcode.png',scale=5)
 
 
 try:
-    num = int(input('enter number of people you want to send the text to : '))
+    num = int(input('\nenter number of people you want to send the text to : '))
     msg = input('enter the message : ')
     no = []
     for i in range(1,num+1):
@@ -30,7 +30,7 @@ try:
             tmp = i%10
             try:
                 if tmp == 1:
-                    x = int(input('enter '+str(i)+'st number : '))
+                    x = int(input('\nenter '+str(i)+'st number : '))
                 elif tmp == 2:
                     x = int(input('enter '+str(i)+'nd number : '))
                 elif tmp == 3:
