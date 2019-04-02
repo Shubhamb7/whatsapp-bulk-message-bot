@@ -1,6 +1,5 @@
 # Whatsapp-bulk-messenger 
 
-download link -> https://drive.google.com/open?id=1o_lznPlibYKVHfkp8gRSVNkVDcZ0i_SP
 
 ### Technologies used :
         Python & Selenium
