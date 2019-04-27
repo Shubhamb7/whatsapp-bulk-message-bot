@@ -16,7 +16,7 @@ driver = webdriver.Firefox(options=options, executable_path=r'geckodriver.exe')
 driver.get('http://web.whatsapp.com')
 driver.set_window_size(1400,900)
 time.sleep(1)
-token = driver.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[1]/div[2]/div').get_attribute('data-ref')
+token = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[2]/div[1]/div/div[2]/div').get_attribute('data-ref')
 img = pyqrcode.create(token)
 img.png('QRcode.png',scale=5)
 
