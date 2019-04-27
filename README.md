@@ -10,7 +10,7 @@
      
 #### Prerequisites :
 
-* adjust the regex expression accourding to country. The pattern is set to 10 digits.
+* adjust the regex expression according to country. The pattern is set to 10 digits.
 * install Mozilla Firefox
 * install Python3
 
