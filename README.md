@@ -9,7 +9,8 @@
      A QRcode image will be generated in the directory. Scan the image and follow the program.
      
 #### Prerequisites :
-    
+
+* adjust the regex expression accourding to country. The pattern is set to 10 digits.
 * install Mozilla Firefox
 * install Python3
 
