@@ -30,13 +30,13 @@ try:
             tmp = i%10
             try:
                 if tmp == 1:
-                    x = int(input('\nenter '+str(i)+'st number : '))
+                    x = input('\nenter '+str(i)+'st number : ')
                 elif tmp == 2:
-                    x = int(input('enter '+str(i)+'nd number : '))
+                    x = input('enter '+str(i)+'nd number : ')
                 elif tmp == 3:
-                    x = int(input('enter '+str(i)+'rd number : '))
+                    x = input('enter '+str(i)+'rd number : ')
                 else:
-                    x = int(input('enter '+str(i)+'th number : '))
+                    x = input('enter '+str(i)+'th number : ')
                 pat = re.compile(r'^[789]\d{9}')
                 p = re.findall(pat,str(x))
                 if p:
@@ -53,7 +53,7 @@ except ValueError:
 
 for i in tqdm(range(0,num)):
     elm = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/div[1]')
-    driver.execute_script("arguments['0'].innerHTML = '<a href=\"https://api.whatsapp.com/send?phone=+91"+str(no[i])+"&message="+msg+"id=\"contact"+str(i+1)+">"+str(i+1)+"</a>';", elm)
+    driver.execute_script("arguments['0'].innerHTML = '<a href=\"https://api.whatsapp.com/send?phone="+str(no[i])+"&message="+msg+"id=\"contact"+str(i+1)+">"+str(i+1)+"</a>';", elm)
     msgele = driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/div/div[1]/a")
     msgele.click()
     time.sleep(0.5)
