@@ -25,19 +25,20 @@ try:
     num = int(input('\nenter number of people you want to send the text to : '))
     msg = input('enter the message : ')
     no = []
+    cty = input('\nenter country code : ')
     for i in range(1,num+1):
         while True:
             tmp = i%10
             try:
                 if tmp == 1:
-                    x = input('\nenter '+str(i)+'st number : ')
+                    x = int(input('\nenter '+str(i)+'st number : '))
                 elif tmp == 2:
-                    x = input('enter '+str(i)+'nd number : ')
+                    x = int(input('enter '+str(i)+'nd number : '))
                 elif tmp == 3:
-                    x = input('enter '+str(i)+'rd number : ')
+                    x = int(input('enter '+str(i)+'rd number : '))
                 else:
-                    x = input('enter '+str(i)+'th number : ')
-                pat = re.compile(r'^[789]\d{9}')
+                    x = int(input('enter '+str(i)+'th number : '))
+                pat = re.compile(r'^[0-9]\d{9}')
                 p = re.findall(pat,str(x))
                 if p:
                     no.append(x)
@@ -53,7 +54,7 @@ except ValueError:
 
 for i in tqdm(range(0,num)):
     elm = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/div[1]')
-    driver.execute_script("arguments['0'].innerHTML = '<a href=\"https://api.whatsapp.com/send?phone="+str(no[i])+"&message="+msg+"id=\"contact"+str(i+1)+">"+str(i+1)+"</a>';", elm)
+    driver.execute_script("arguments['0'].innerHTML = '<a href=\"https://api.whatsapp.com/send?phone="+str(cty)+str(no[i])+"&message="+msg+"id=\"contact"+str(i+1)+">"+str(i+1)+"</a>';", elm)
     msgele = driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/div/div[1]/a")
     msgele.click()
     time.sleep(0.5)
