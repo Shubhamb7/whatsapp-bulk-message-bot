@@ -9,7 +9,6 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
 
-
 options = Options()
 options.set_headless(True)
 driver = webdriver.Firefox(options=options, executable_path=r'geckodriver.exe')
@@ -49,7 +48,6 @@ try:
                 continue       
 except ValueError:
     print('Invalid Input ! ')
-
 
 for i in tqdm(range(0,num)):
     elm = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/div[1]')
