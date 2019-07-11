@@ -1,0 +1,96 @@
+1562840102176	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Shubh\\AppData\\Local\\Temp\\rust_mozprofile.WKpr5dWjfgI3"
+1562840102838	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1562840102839	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1562840102839	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1562840104938	Marionette	INFO	Listening on port 53390
+1562840105309	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 30: TypeError: manifestURI is null
+[Parent 12644, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1562840250430	Marionette	INFO	Stopped listening on port 53390
+[Parent 12644, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14680, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14680,[Parent 12644, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16856, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16856, Chrome_[Parent 12644, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10528, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10528, Chrome_Chil
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1562840643226	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Shubh\\AppData\\Local\\Temp\\rust_mozprofile.QWiOXlbRB1fA"
+*** You are running in headless mode.
+1562840643549	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1562840643549	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1562840643549	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1562840644540	Marionette	INFO	Listening on port 53490
+1562840644748	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 30: TypeError: manifestURI is null
+[Parent 2612, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 2612, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221562803205960%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+valid extension permission: resource://pdf.js/
+1562840811817	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1562840812768	Marionette	INFO	Listening on port 53550
+1562840813059	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 30: TypeError: manifestURI is null
+1562840850949	Marionette	INFO	Stopped listening on port 53550
+[Parent 7704, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 3444, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 3444, Ch[Parent 7704, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13144, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13144, Chrome_[Parent 7704, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1916, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 19161562840984731	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Shubh\\AppData\\Local\\Temp\\rust_mozprofile.1L12SM521Nkw"
+*** You are running in headless mode.
+1562840985353	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1562840985353	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1562840985353	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1562840986359	Marionette	INFO	Listening on port 53623
+1562840986768	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 30: TypeError: manifestURI is null
+[Parent 19860, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 19860, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221562803205960%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+ission: mozillaAddons
+1562841128372	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1562841128372	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1562841129350	Marionette	INFO	Listening on port 53692
+1562841129803	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 30: TypeError: manifestURI is null
+[Parent 540, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 540, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221562803205960%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+ission: mozillaAddons
+1562841262467	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1562841262467	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1562841263482	Marionette	INFO	Listening on port 53772
+1562841263923	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 30: TypeError: manifestURI is null
+1562841304665	Marionette	INFO	Stopped listening on port 53772
+[Parent 8012, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14216, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1421[Parent 8012, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 17044, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 17044, Chrome_ChildT[Parent 8012, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 20016, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560988636/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 20016,
