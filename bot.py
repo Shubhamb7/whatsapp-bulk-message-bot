@@ -25,7 +25,6 @@ try:
     num = int(input('\nenter number of people you want to send the text to : '))
     msg = input('enter the message : ')
     no = []
-    cty = input('\nenter country code : ')
     for i in range(1,num+1):
         while True:
             tmp = i%10
@@ -54,7 +53,7 @@ except ValueError:
 
 for i in tqdm(range(0,num)):
     elm = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/div[1]')
-    driver.execute_script("arguments['0'].innerHTML = '<a href=\"https://api.whatsapp.com/send?phone="+str(cty)+str(no[i])+"&message="+msg+"id=\"contact"+str(i+1)+">"+str(i+1)+"</a>';", elm)
+    driver.execute_script("arguments['0'].innerHTML = '<a href=\"https://api.whatsapp.com/send?phone="+str(no[i])+"&message="+msg+"id=\"contact"+str(i+1)+">"+str(i+1)+"</a>';", elm)
     msgele = driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/div/div[1]/a")
     msgele.click()
     time.sleep(0.5)
