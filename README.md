@@ -20,7 +20,7 @@
 * tqdm :  makes your loops show a smart progress meter - just wrap any iterable with tqdm() 
              `pip install tqdm`
              
-* pypng :  PyPNG can read and write all PNG formats.
-             `sudo pip install pypng`
+* PIL :  Python Imaging Library.
+             `pip install PIL`
              
-* Pyqrcode : The pyqrcode module is a QR code generator that is simple to use and written in pure python.                                                                                   `pip install pyqrcode`
+* qrcode : The qrcode module is a QR code generator that is simple to use and written in pure python.                                                                                   `pip install qrcode`
