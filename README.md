@@ -6,7 +6,7 @@
         
 ### Walkthrough 
      Run the python script and wait for a while. 
-     A QRcode image will be generated in the directory. Scan the image and follow the program.
+     A QRcode will pop-up. Scan the image before 6 sec. Once the pop-up closes, continue with the program instructions.
      
 #### Prerequisites :
 
