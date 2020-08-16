@@ -24,13 +24,13 @@ img.show()
 time.sleep(6)
 img.close()
 
-try:
-    num = int(input('\nenter number of people you want to send the text to : '))
-    msg = input('enter the message : ')
-    no = []
-    for i in range(1,num+1):
-        x = int(input("enter number {}: ".format(i)))
-        no.append(x)
+num = int(input('\nenter number of people you want to send the text to : '))
+msg = input('enter the message : ')
+no = []
+
+for i in range(1,num+1):
+    x = int(input("enter number {}: ".format(i)))
+    no.append(x)
 
 for i in tqdm(range(0,num)):
     elm = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/div[1]')
@@ -42,7 +42,6 @@ for i in tqdm(range(0,num)):
     focus = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')
     focus.send_keys(msg)
     focus.send_keys(Keys.ENTER)
-    
 
 print('done')
 time.sleep(1)
@@ -52,6 +51,5 @@ time.sleep(1)
 logout = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/header/div[2]/div/span/div[3]/span/div/ul/li[7]')
 logout.click()
 print('logged out')
-
 
 driver.quit()
