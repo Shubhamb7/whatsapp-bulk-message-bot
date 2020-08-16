@@ -29,29 +29,8 @@ try:
     msg = input('enter the message : ')
     no = []
     for i in range(1,num+1):
-        while True:
-            tmp = i%10
-            try:
-                if tmp == 1:
-                    x = int(input('\nenter '+str(i)+'st number : '))
-                elif tmp == 2:
-                    x = int(input('enter '+str(i)+'nd number : '))
-                elif tmp == 3:
-                    x = int(input('enter '+str(i)+'rd number : '))
-                else:
-                    x = int(input('enter '+str(i)+'th number : '))
-                pat = re.compile(r'^[0-9]\d{9}$')
-                p = re.findall(pat,str(x))
-                if p:
-                    no.append(x)
-                    break
-                else:
-                    print('pattern dosent match !')
-            except ValueError:
-                print('Invalid Input ! ')
-                continue       
-except ValueError:
-    print('Invalid Input ! ')
+        x = int(input("enter number {}: ".format(i)))
+        no.append(x)
 
 for i in tqdm(range(0,num)):
     elm = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/div[1]')
@@ -70,12 +49,9 @@ time.sleep(1)
 dot = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/header/div[2]/div/span/div[3]/div')
 dot.click()
 time.sleep(1)
-logout = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/header/div[2]/div/span/div[3]/span/div/ul/li[6]/div')
+logout = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/header/div[2]/div/span/div[3]/span/div/ul/li[7]')
 logout.click()
 print('logged out')
-
-if os.path.exists('QRcode.png'):
-    os.remove('QRcode.png')
 
 
 driver.quit()
