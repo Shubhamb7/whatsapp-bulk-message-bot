@@ -7,7 +7,7 @@
 ### Walkthrough 
      Run the python script and wait for a while. 
      A QRcode will pop-up. Scan the image using WhatsApp Web. Close the pop-up and follow the program.
-     * Enter the number with the country code.
+#####Enter the number with the country code.
      
 #### Prerequisites :
 
