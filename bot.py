@@ -1,6 +1,5 @@
 import time
 import os
-import re
 import selenium
 import qrcode
 import PIL
