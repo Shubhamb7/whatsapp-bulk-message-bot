@@ -6,7 +6,7 @@
         
 ### Walkthrough 
      Run the python script and wait for a while. 
-     A QRcode will pop-up. Scan the image before 6 sec. Once the pop-up closes, continue with the program instructions.
+     A QRcode will pop-up. Scan the image using WhatsApp Web. Close the pop-up and follow the program.
      
 #### Prerequisites :
 
