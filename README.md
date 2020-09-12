@@ -16,9 +16,6 @@
 
 * Selenium : Selenium is a portable automation software-testing framework for web applications.
                 `pip install selenium`
-
-* tqdm :  makes your loops show a smart progress meter - just wrap any iterable with tqdm() 
-             `pip install tqdm`
              
 * PIL :  Python Imaging Library.
              `pip install PIL`
